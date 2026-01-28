@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using Microsoft.VisualBasic;
 /*
- * Nicholas Chapman-Miller
- * Lab 2
- * CPT-206-A01H
+* Nicholas Chapman-Miller
+* CPT 185 - A01H
+* Lab 2
  */
 namespace NChapman_Miller_Lab_2
 {
@@ -21,60 +13,47 @@ namespace NChapman_Miller_Lab_2
             InitializeComponent();
         }
 
-        private void cityBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.cityBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.cityDBDataSet);
+            lblCardName.Text = "Six of Diamonds";
+        }
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            lblCardName.Text = "Ace of Spades";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            lblCardName.Text = "Five of Hearts";
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cityDBDataSet.City' table. You can move, or remove it, as needed.
-            this.cityTableAdapter.Fill(this.cityDBDataSet.City);
 
-        }
-
-        private void butSortAsc_Click(object sender, EventArgs e)
-        {
-            this.cityTableAdapter.SortPopAsc(this.cityDBDataSet.City);
-        }
-
-        private void butSortDes_Click(object sender, EventArgs e)
-        {
-            this.cityTableAdapter.SortPopDesc(this.cityDBDataSet.City);
-        }
-
-        private void butTot_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("The Total Population is "+this.cityTableAdapter.TotalPop());
-        }
-
-        private void butAvg_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("The Average Population is "+this.cityTableAdapter.AvgPop());
-        }
-
-        private void butHigh_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("The Highest Population is "+this.cityTableAdapter.MaxPop());
-        }
-
-        private void butLow_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("The Lowest Population is "+this.cityTableAdapter.MinPop());
-        }
-
-        private void butSortCity_Click(object sender, EventArgs e)
-        {
-            this.cityTableAdapter.SortCity(this.cityDBDataSet.City);
         }
 
         private void butExit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("*** THANK YOU ***");
+            MessageBox.Show("***** THANK YOU *****");
             this.Close();
+          
+        }
+
+        private void picBoxKingClub_Click(object sender, EventArgs e)
+        {
+            lblCardName.Text = "King of Clubs";
+        }
+
+        private void picBoxTenDia_Click(object sender, EventArgs e)
+        {
+            lblCardName.Text = "Ten of Diamonds";
+
         }
     }
 }
