@@ -1,0 +1,37 @@
+Lab 2 Code Review
+By Shawn Conboy
+
+First Impressions
+
+	Solid. A+. The UI looked clean and simplistic. All buttons worked,
+	I was able to add a record and save it with no issues.
+
+Is the code generally readable and well documented?
+
+	Yes. Code is readable. Well documented, not so much. I understand this is a
+	simple project and the methods are more or less self explanatory.  Add comments
+	throughout to help documentation. Picture if a non tech person was trying to 
+	read this. The goal is to simplify and document to that level.
+
+Did you find any software defects?
+	
+	No. This project worked 100% for me. I'm relieved to have made this my 4th
+	review because of how well put together it is.
+
+
+What was one way that your solution differed from yours?
+
+	When you press the button for a max or a min population. We can see the population
+	But not the city or state that population belongs to. I had to go back into
+	my code to create a way to clarify that. I think that's better for UI to know 
+	exactly what a user is looking at.
+
+Do you have any other constructive comments for the author?
+
+	Not really. Like I said earlier, I really liked this project. It was simple and clean.
+	Fully functional. 
+
+	If anything, I'd suggest formatting your numbers in your message boxes so that
+	they have commas to separate some of the long numbers. Use "N0" in your toString()
+	and that will format it.
+
